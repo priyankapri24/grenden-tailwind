@@ -13,7 +13,7 @@
     <div class="bg-green-100 p-3 flex  items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl ">GREENDEN</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="h-6 w-6 md:hidden ">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5 " />
         </svg>
@@ -35,53 +35,73 @@
 
 
     </div>
+     <!-- sidenavbar -->
+     <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000 " style="width:50%;height:100vh;right: -50%;"> 
+        <div class="text-right p-5">
+            <p class="inline cursor-pointer " id="closenav"> X</p>
+        </div>
+        <ul class="flex flex-col gap-10 text-gray-600 items-center ">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="product.html">Products</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+            </li>
+        </ul>
+
+     </section>
 
 
     <div>
         <h1 class=" mt-10 font-bold text-3xl text-center md:text-4xl">Our Products</h1>
         <div class="text-center">
-            <input type="text" placeholder="Search for a products" class="border border-black p-3 m-5 "
+            <input id="search" type="text" placeholder="Search for a products" class="border border-black p-3 m-5 "
                 style="width: 80%;">
         </div>
-        <div class="grid grid-rows-4 grid-cols-2 text-center mt-3  gap-3 md:grid-cols-4 md:grid-rows-2 p-3">
+        <div id="productcontainer" class=" grid grid-rows-4 grid-cols-2 text-center mt-3  gap-3 md:grid-cols-4 md:grid-rows-2 p-3">
             <div>
                 <img src="./images/flower3.png" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <p>Rose plant</p>
+                <h1>Rose plant</h1>
                 <p>20$</p>
             </div>
             <div>
                 <img src="./images/rose.png" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <p>Rose plant</p>
+                <h1>lily plant</h1>
                 <p>20$</p>
             </div>
             <div>
                 <img src="./images/flower2.png" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <p>Rose plant</p>
+                <h1>hybis plant</h1>
                 <p>20$</p>
             </div>
             <div>
                 <img src="./images/flower.png" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <p>Rose plant</p>
+                <h1>snake plant</h1>
                 <p>20$</p>
             </div>
             <div>
                 <img src="./images/flower.png" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <p>Rose plant</p>
+                <h1>money plant</h1>
                 <p>20$</p>
             </div>
             <div>
                 <img src="./images/rose.png" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <p>Rose plant</p>
+                <h1>sunflower plant</h1>
                 <p>20$</p>
             </div>
             <div>
                 <img src="./images/flower2.png" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <p>Rose plant</p>
+                <h1>tulip plant</h1>
                 <p>20$</p>
             </div>
             <div>
                 <img src="./images/flower3.png" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <p>Rose plant</p>
+                <h1>dandalins plant</h1>
                 <p>20$</p>
             </div>
         </div>
@@ -92,6 +112,7 @@
         <p >The Standard chunk of lorem issum used since 1500s is reproduced below for those internet</p>
         <p>&copy 2021 Greenden.com</p>
     </div>
+    <script src="product.js"></script>
 </body>
 
 </html>
